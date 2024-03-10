@@ -26,18 +26,20 @@ def pole_trapezu(a=3,b=4,h=7):
     return pole
 print(pole_trapezu())
 def iloczyn(a=1,b=4,ile=10):
-    i=0
     wynik=1
     a1=a
-    while i<ile:
-        a1*=b
+    for j in range(a,ile+1):
         wynik*=a1
+        a1+=b
     return wynik
+print(iloczyn())
 try:
     liczba=int(input('Podaj liczbe: '))
     pierwiastek=math.sqrt(liczba)
 except ValueError:
     print('Error!')
+else:
+    print(pierwiastek)
 
 
 
